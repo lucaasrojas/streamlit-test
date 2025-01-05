@@ -18,9 +18,9 @@ def logout():
 login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
-introduction = st.Page('pages/introduction.py', title='Introduccion')
+introduction = st.Page('pages/introduction.py', title='Introduccion', default=True)
 commands = st.Page(
-   "pages/commands.py", title="Comandos", icon="🔥", default=True
+   "pages/commands.py", title="Comandos", icon="🔥"
 )
 resources = st.Page("pages/resources.py", title="Recursos", icon=":material/favorite:")
 #Cheque en el estado de la sesion si el flag de logged_in es true
